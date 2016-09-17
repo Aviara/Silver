@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Silver Bell Tree School</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/fadeSlideShow.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    jQuery('#slideshow').fadeSlideShow();
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div class="container">
+    <div class="header">
+      <div class="header-top">
+        <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="logo" title="logo"></a></div>
+        <div class="tag-line">
+              <h1><a href="index.html">SILVER BELL TREE SCHOOL</a></h1>
+            </div>
+        <div class="social-link"> <a href="https://www.facebook.com/" target="_blank"> <img src="images/facebook-icon.png" alt="Facebook" title="Facebook"> </a> <a href="https://twitter.com/" target="_blank"><img src="images/twitter-icon.png" alt="Twitter" title="Twitter"> </a><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-icon.png" class="social-link-last" alt="Linkedin" title="Linkedin"></a><a href="https://www.youtube.com/" target="_blank"> <img src="images/you-tube-icon.png" alt="You Tube" title="You Tube"> </a></div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-inner-bottom">
+          <nav>
+            <div id='cssmenu'>
+              <ul>
+                <li><a href='index.html'><span>Home</span></a></li>
+                <li><a href='#'><span>About Us</span></a>
+                  <ul>
+                    <li><a href='school_profile.html'><span>School Profile</span></a></li>
+                    <li><a href='director_speak.html'><span>Director Speak</span></a></li>
+                    <li><a href='mission_vision.html'><span>Mission & Vision</span></a></li>
+                    <li><a href='our_values.html'><span>Our Values</span></a></li>
+                    <li><a href='our_principle.html'><span>Our Principle</span></a></li>
+                  </ul>
+                </li>
+                <li><a href='#'><span>Courses</span></a>
+                  <ul>
+                    <li><a href='list_of_courses_1.html'><span>List Of Courses 1</span></a></li>
+                    <li><a href='list_of_courses_2.html'><span>List Of Courses 2</span></a></li>
+                  </ul>
+                </li>
+                <li><a href='time_table.html'><span>Time Table</span></a></li>
+                <li><a href='admission.html'><span>Admission</span></a></li>
+                <li><a href='notices.html'><span>Notices</span></a></li>
+                <li><a href='testimonials.html'><span>Testimonials</span></a> </li>
+                <li><a href='achievement.html'><span>Achievement</span></a></li>
+                 <li><a href='gallery.html' class='selected'><span class="active-color">Gallery</span></a></li>
+                <li class='last'><a href='contact_us.html'><span>Contact Us</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="maincontainer">
+      <div class="heading">
+        <h1>Event Gallery</h1>
+      </div>
+      <div class="gallery">
+        <ul>
+          <li><a href="images/gallery1.jpg" rel="prettyPhoto[gallery1]" > <img src="images/gallery-thum.png"  alt="Gallery" title="Event Name" /></a></li>
+          <li><a href="images/gallery1.jpg" rel="prettyPhoto[gallery1]" > <img src="images/gallery-thum.png"  alt="Gallery" title="Event Name" /></a></li>
+          <li><a href="images/gallery1.jpg" rel="prettyPhoto[gallery1]" > <img src="images/gallery-thum.png"  alt="Gallery" title="Event Name" /></a></li>
+          <li><a href="images/gallery1.jpg" rel="prettyPhoto[gallery1]" > <img src="images/gallery-thum.png"  alt="Gallery" title="Event Name" /></a></li>
+          <li><a href="images/gallery1.jpg" rel="prettyPhoto[gallery1]" > <img src="images/gallery-thum.png"  alt="Gallery" title="Event Name" /></a></li>
+           <li><a href="images/gallery1.jpg" rel="prettyPhoto[gallery1]" > <img src="images/gallery-thum.png"  alt="Gallery" title="Event Name" /></a></li>
+          <li><a href="images/gallery1.jpg" rel="prettyPhoto[gallery1]" > <img src="images/gallery-thum.png"  alt="Gallery" title="Event Name" /></a></li>
+          <li><a href="images/gallery1.jpg" rel="prettyPhoto[gallery1]" > <img src="images/gallery-thum.png"  alt="Gallery" title="Event Name" /></a></li>
+        </ul>
+      </div>
+      <script type="text/javascript" charset="utf-8">
+					$(document).ready(function(){
+					$("area[rel^='prettyPhoto']").prettyPhoto();
+					
+					$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'facebook',slideshow:5000, autoplay_slideshow: false});
+					$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+					
+					$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+					custom_markup: '',
+					changepicturecallback: function(){ initialize(); }
+					});
+					
+					$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+					custom_markup: '',
+					changepicturecallback: function(){ _bsap.exec(); }
+					});
+					});
+                </script>
+    </div>
+    <div class="footer">
+      <div class="footer-inner">
+        <div class="one-fourth">
+          <h3>Navigation</h3>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="school_profile.html">About Us</a></li> <li><a href="list_of_courses_1.html">Courses</a></li>
+          <li><a href="time_table.html">Time Table</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="notices.html">Notices</a></li>
+        </div>
+        <div class="one-fourth">
+          <h3>Other Links</h3>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="achievement.html">Achievement</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="privacy_policy.html">Privacy Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="site_map.html">Site Map</a></li>
+        </div>
+        <div class="one-fourth">
+          <h3>Testimonials</h3>
+          <ul id="slideshow">
+            <a href="testimonials.html">
+            <li>"Quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et."
+              <h5 class="prepend-top1">John Deo</h5>
+            </li>
+            </a> <a href="testimonials.html">
+            <li>"Consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam."
+              <h5 class="prepend-top1">John Deo</h5>
+            </li>
+            </a>
+          </ul>
+        </div>
+        <div class="one-fourth one-fourth-last">
+          <h3>Get in Touch</h3>
+          <img src="images/address-icon.png">
+          <li>423, Sterling Center, Opp. Aurora Tower, M.G. Road Camp, Pune - 411 001, Maharashtra, INDIA.</li>
+          <img src="images/phone-icon.png">
+          <li>+91 8412009219 / 020 41254127</li>
+          <img src="images/email-icon.png">
+          <li>info@marvelsolution.com</li>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="footer-bottom">
+        <div class="copyright">Copyright © 2014 Silver Bell Tree | All Rights Reserved</div>
+        <div class="designedby">Design & Develop By <a href="http://www.marvelsolution.com/" target="_blank">Marvel Solution</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<!--Photogallery-->
+
+<!--script src="js/jquery.lint.js" type="text/javascript" charset="utf-8"></script-->
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+</html>

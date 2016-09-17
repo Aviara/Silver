@@ -1,0 +1,2 @@
+[15-Sep-2016 07:34:57 UTC] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/aviaraa/public_html/Kalpesh_Test/SILVER/index.php on line 6
+[15-Sep-2016 07:35:00 UTC] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/aviaraa/public_html/Kalpesh_Test/SILVER/index.php on line 6
