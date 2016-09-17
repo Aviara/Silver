@@ -1,11 +1,16 @@
 <?php
-error_reporting(E_PARSE | E_ALL | 0);
+//error_reporting(E_PARSE | E_ALL | 0);
+error_reporting(E_ALL ^ E_DEPRECATED);
 //include("includes/global.inc.php");
+  $link = mysql_connect('localhost', 'root', '');
+    mysql_select_db('school', $link);
    
 $selectBanner = "select * from banner where status = 1";
-$fireBanner	=	mysqli_query($selectBanner ) or die(mysql_error());
-$countBanner = mysqli_affected_rows();
-
+$fireBanner	=	mysql_query($selectBanner ) or die(mysql_error());
+$countBanner = mysql_affected_rows();
+$dataBanner="";
+$homeCommitteeee="";
+$homeCommittee1="";
 	while($rowBanner = mysql_fetch_array($fireBanner))
 		{
 					$dataBanner.= '<div data-src="banner/'.$rowBanner['banner_url'].'" data-thumb="banner/'.$rowBanner['banner_url'].'"></div>';	
@@ -41,6 +46,6 @@ while($rowCommittee1  = mysql_fetch_array($fireCommittee1))
 	$homeCommittee1 .=' <li><a href="class-notices.php?id='.$rowCommittee1['id'].'">'.$rowCommittee1['name'].'</a></li>';
 	}
 
-include("html/index.html");
+//include("html/index.html");
 
 ?>
